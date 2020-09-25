@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/main.scss";
 import AgregarTarea from "./components/AgregarTarea";
 
 function App() {
