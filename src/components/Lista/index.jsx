@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoMdTrash } from "react-icons/io";
 
 const Lista = ({ tachar, borrar, list, filter }) => {
@@ -15,7 +15,8 @@ const Lista = ({ tachar, borrar, list, filter }) => {
                         <input
                             type="radio"
                             className="checkbox"
-                            checked={item.estado == "completa"}
+                            defaultChecked
+                            checked={item.estado === "completa"}
                             onClick={() => {
                                 tachar(item);
                             }}

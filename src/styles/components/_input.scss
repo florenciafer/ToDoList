@@ -2,6 +2,9 @@
   color: #e84a5f;
   font-size: 2rem;
   margin-left: -3rem;
+  @media screen and (max-width:320px) {
+    margin-left: -5rem;
+  }
 }
 .input {
   padding: 0.8rem;
@@ -12,7 +15,16 @@
   font-size: 1.1rem;
   font-weight: 400;
   color: #838383;
-  background-color: none;
+ outline: none;
+@media screen and (max-width: 600px){
+   width:88vw;
+ }
+  @media screen and (max-width:320px){
+  width: 94vw;
+ margin-right: 4px;
+    margin-left: 4px;
+}
+
 }
 .input-container {
   display: flex;
@@ -28,6 +40,7 @@ input::placeholder {
 .btn {
   border: none;
   background-color: #848ccf;
+  outline: none;
 }
 
 .tareas {
@@ -44,6 +57,14 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ @media screen and (max-width: 600px){
+   width:88vw;
+}
+ @media screen and (max-width:320px){
+ width: 94vw;
+margin-right: 4px;
+    margin-left: 4px;
+}
 }
 .trashcan {
   font-size: 1.5rem;
@@ -71,12 +92,22 @@ input::placeholder {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  outline: none;
+   @media screen and (max-width: 600px){
+   width:88vw;
+   margin-right: 4px;
+    margin-left: 4px;
+   }
+ @media screen and (max-width:320px){
+  width: 94vw;
+}
 }
 
 .btn-filtros {
   padding: 0.5rem 0.8rem;
   border-radius: 1.5rem;
   border: none;
+  outline: none;
 }
 .btn-filtros--incompletas {
   font-family: Roboto, sans-serif;

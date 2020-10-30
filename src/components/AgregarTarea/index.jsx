@@ -12,9 +12,8 @@ const AgregarTarea = () => {
 
     const [filter, setFilter] = useState(null);
 
-    const agregar = (tarea, setText) => {
+    const agregar = (tarea) => {
         setList([...list, { tarea, estado: "incompleta" }]);
-        setText("");
     };
 
     const borrar = (item) => {
@@ -27,7 +26,7 @@ const AgregarTarea = () => {
     const tachar = (item) => {
         const indexItem = list.indexOf(item);
         const clone = [...list];
-        const estado = item.estado == "incompleta" ? "completa" : "incompleta";
+        const estado = item.estado === "incompleta" ? "completa" : "incompleta";
         clone.splice(indexItem, 1, { ...item, estado });
         setList(clone);
     };
